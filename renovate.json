@@ -10,5 +10,6 @@
       "datasourceTemplate": "docker"
     }
   ],
-  "prHourlyLimit": 99
+  "prHourlyLimit": 99,
+  "configMigration": true
 }
