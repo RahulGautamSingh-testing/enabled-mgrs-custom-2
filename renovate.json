@@ -1,3 +1,13 @@
 {
-  "enabledManagers": ["regex", "nvm", "npm"]
+  "enabledManagers": ["regex", "nvm", "npm"],
+   "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["config/options/index.ts"],
+      "matchStrings": [
+        "default: '(?<depName>ghcr.io/containerbase/sidecar):(?<currentValue>.*)'"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ]
 }
