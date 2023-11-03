@@ -1,9 +1,15 @@
 {
-  "enabledManagers": ["regex", "nvm", "npm"],
-   "customManagers": [
+  "enabledManagers": [
+    "custom.regex",
+    "nvm",
+    "npm"
+  ],
+  "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["index.ts"],
+      "fileMatch": [
+        "index.ts"
+      ],
       "matchStrings": [
         "default: '(?<depName>ghcr.io/containerbase/sidecar):(?<currentValue>.*)'"
       ],
