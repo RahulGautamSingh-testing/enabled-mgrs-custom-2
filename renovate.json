@@ -3,7 +3,7 @@
    "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["config/options/index.ts"],
+      "fileMatch": ["index.ts"],
       "matchStrings": [
         "default: '(?<depName>ghcr.io/containerbase/sidecar):(?<currentValue>.*)'"
       ],
